@@ -1,4 +1,3 @@
-
 // create two buffers from strings
 const buffer1 = Buffer.from("JavaScript is easy");
 const buffer2 = Buffer.from("We are learning and understanding");
