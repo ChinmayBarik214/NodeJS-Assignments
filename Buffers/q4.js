@@ -3,13 +3,13 @@ function findSubstring(buffer, sub) {
   // sequentially take sub.length character substrings from bufferString and compare with sub
   for (let i = 0; i <= bufferString.length - sub.length; i++) {
     let j;
+    
     for (j = 0; j < sub.length; j++) {
-      
       if (bufferString[i + j] !== sub[j]) {
         break;
       }
     }
-    
+
     if (j === sub.length) {  // if taken substring matches with sub exactly
       // substring found at index i
       return i;
